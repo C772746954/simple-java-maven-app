@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'source  ~/.bashrc && mvn -B -DskipTests clean package'
+                sh '.  ~/.bashrc && mvn -B -DskipTests clean package'
             }
         }
         stage('Test') {
