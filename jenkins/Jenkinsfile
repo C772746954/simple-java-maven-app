@@ -1,3 +1,4 @@
+#!groovy charset=UTF-8
 pipeline {
   agent {
     kubernetes {
