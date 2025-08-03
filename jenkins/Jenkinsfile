@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh '.  ~/.bashrc && mvn -B -DskipTests clean package'
+                sh '.  ~/.bashrc && find / -name apache-maven-3.8.9  && mvn -B -DskipTests clean package'
             }
         }
         stage('Test') {
